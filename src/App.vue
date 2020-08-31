@@ -1,0 +1,87 @@
+<template>
+<div >
+  <router-view v-if="$route.name=='Resume'" ></router-view>
+<div v-if="$route.name!='Resume'" style=" transition-duration: 3000ms;">
+
+<div  id="main">
+<div  id="app" v-observe-visibility="appvisibChange">
+    <circles @open=" $vuetify.goTo('#profile',{duration:900, offset: 0,easing: 'easeInOutCubic',})" />
+
+      <particles-bg type="cobweb" :canvas='{backgroundColor:"#010B14"}' color="#ffffff" :bg="true"/>
+
+</div>
+
+</div>
+
+<Profile  v-bind:open='open' id="profile"/>
+<!-- <Resume id="res" /> -->
+</div>
+</div>
+</template>
+
+<script>
+
+import Home from './views/Home';
+import { ParticlesBg } from "particles-bg-vue";
+import Profile from './views/profile';
+import icon from "./assets/icon.js";
+import Resume from './views/Resume';
+import Circles from './views/Circles'
+export default {
+  name: 'App',
+  components: {
+    Home,ParticlesBg,Profile,Resume,Circles
+  },
+  data() {
+    return {
+      fixed:false,
+      open:false
+    }
+  },
+  methods:{
+    appvisibChange(isVisible, entry){
+    this.open=false
+    if(isVisible==false){
+      this.open=true
+    }
+    if(isVisible==true){
+      this.open=false
+    }
+    }
+  },
+computed:{
+  whether(){
+    if(this.$route.name=='Home')
+    return true
+    else
+    return false
+  },
+  colourss(){
+  return "#004466";
+}
+
+},
+};
+</script>
+<style lang='scss' scoped>
+#app {
+
+  height: 100%;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  // padding-top: 2%;
+}
+.main{
+  background-color: #2c3e50;
+}
+.Profile{
+  transition-duration: 1000ms;
+}
+
+.Circles{
+  z-index: 0;
+}
+</style>
