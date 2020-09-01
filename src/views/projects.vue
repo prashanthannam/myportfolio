@@ -7,7 +7,7 @@
           transition="dialog-transition"
         >
           <v-card>
-           <v-carousel height="" color="#125588" class="pt-2 pb-2" hide-delimiter-background show-arrows="" hide-delimiters=""
+           <v-carousel height="340" color="#125588" class="pt-2 pb-2" hide-delimiter-background show-arrows="" hide-delimiters=""
              >
                <v-carousel-item v-for="img in number.images" :key="img" >
                  <v-img class="ma-1" style="" height="340" contain :src="img"></v-img>
@@ -26,12 +26,15 @@
             <v-card-text>
               {{number.desc}}
             </v-card-text>
-            <v-card-actions class="mt-n4 d-flex justify-center">
+            <v-card-actions class="mt-n4 d-flex justify-space-around">
                 <v-btn v-if="number.link!=null" dark="" :href="number.link" color="#125588">
                    <v-icon left color="">mdi-open-in-new</v-icon>
 
                   View site</v-btn>
+                 <v-btn  dark="" :href="number.proLink" color="#125588">
+                   <v-icon left color="">mdi-github</v-icon>
 
+                  View Project</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -105,13 +108,13 @@ data(){
     number:{},
     projects:[
       {title:'NeoBook',date:'July 2020',desc:'NeoBook is a social media WebApp built using Vue.js and Firebasefor database. Users can post content, share posts, chat, comment, like etc.',img:'/neobook.png',
-      images:['neobook.png','neobook1.png','neobook2.png','neobook3.png','neobook4.png','neobook5.png'],link:'https://neobook.herokuapp.com/'},
+      images:['neobook.png','neobook1.png','neobook2.png','neobook3.png','neobook4.png','neobook5.png'],link:'https://neobook.herokuapp.com/',proLink:'https://github.com/prashanthannam/NeoBook'},
       {title:'NeoChat',date:'June 2020',desc:'NeoChat chat app build using flutter and firestore, where users can add profile pictures, search for other users and can make real-time chatting.',img:'/neochat.png',
-      images:['neochat.png','neochat1.png','neochat2.png','neochat3.png','neochat4.png',],link:null},
+      images:['neochat.png','neochat1.png','neochat2.png','neochat3.png','neochat4.png',],link:null,proLink:'https://github.com/prashanthannam/NeoChat'},
       {title:'Detecting Helmet Violators in Traffic',date:'Dec 2019',desc:'The system aims at detecting riders without helmet along with their number plates from traffic footage to extract Registration number.',img:'/helmet.png',
-      images:['helmet.png','helmet1.png','helmet2.png',],link:'http://ec2-18-191-242-212.us-east-2.compute.amazonaws.com/detect/helmetview/'},
+      images:['helmet.png','helmet1.png','helmet2.png',],link:'http://ec2-18-191-242-212.us-east-2.compute.amazonaws.com/detect/helmetview/',proLink:'https://github.com/prashanthannam/HelmetDetectionYOLOV3'},
       {title:'Sign Language Translator',date:'Apr 2018',desc:'The project aims at recognizing sign Gesture images and display the respective alphabetic notation on a webpage using Convolutional Neural Network',img:'/slt.png',
-      images:['slt.png','slt1.png'],link:null},
+      images:['slt.png','slt1.png'],link:null,proLink:'https://github.com/prashanthannam/Sign-Language-Translator'},
 
     ],
   }

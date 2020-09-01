@@ -10,12 +10,12 @@
     </v-row>
     <div class="mt-14 ml-2">
   <v-layout v-for="(skill,i) in ordskills" :key="i"  row wrap justify-center>
-   <v-flex xs4 sm4 md3 lg3 xl4>
+   <v-flex xs6 sm4 md3 lg3 xl4>
       <div class="sk">{{skill.name}}</div>
     </v-flex>
-    <v-flex xs6 sm6 md4 lg3 xl1 class="">
+    <v-flex xs4 sm6 md4 lg3 xl1 class="">
 
-        <v-progress-linear color="#125588" class=" d-flex justify-end" height="20" :value="skill.percent">
+        <v-progress-linear color="#125588" class=" mt-2" height="20" :value="skill.percent">
           <span class="">{{skill.percent}}%</span>
         </v-progress-linear>
     </v-flex>
@@ -38,7 +38,8 @@ data(){
       {name:'Deep Learning',percent:80},
       {name:'Firestore',percent:75},
       {name:'Data Structures',percent:90},
-      {name:'Flutter',percent:85}
+      {name:'Flutter',percent:85},
+      {name:'Django',percent:88}
       ]
   }
 },
@@ -62,6 +63,6 @@ computed:{
 }
 .sk{
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
 }
 </style>

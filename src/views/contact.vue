@@ -1,5 +1,11 @@
 <template>
   <div  id="contact" class="pt-16">
+    <v-snackbar
+      v-model="value"
+    >
+        Message sent Successfully !!!
+      <v-btn text color="primary" @click.native="value = false">Close</v-btn>
+    </v-snackbar>
     <v-row class="pb-0 mt-4" justify="center">
         <p class="titl grey--text text--darken-2">Contact</p>
     </v-row>
@@ -8,16 +14,26 @@
   <line x1="0" y1="0" x2="200" y2="0" style="stroke:#125566;stroke-width:10" />
 </svg>
     </v-row>
-  <v-layout class="mt-14" row wrap justify-center="">
-    <v-flex xs8 sm8 md lg6 xl6>
-        <form class="contact-form" @submit.prevent="sendEmail">
-    <v-text-field type="text" id="name"  placeholder="Your Name" append-icon="mdi-person" v-model="un" outlined color></v-text-field>
-        <v-text-field type="text" id="email" placeholder="Your Email ID" append-icon="mdi-person" v-model="user_email" outlined color></v-text-field>
-      <v-textarea outlined color="" id="mess" placeholder="Type message" error-count="" v-model="message"></v-textarea>
-     <v-btn small elevation="" type="submit" value="send" color="">Send</v-btn>
+  <v-layout class="mt-8" row wrap justify-center="">
+    <v-flex xs10 sm8 md6 lg5 xl5>
+      <div> <v-icon color="">mdi-phone</v-icon>
+ +91 8466851979</div>
+<div> <v-icon color="">mdi-gmail</v-icon>
+ prashanth31399@gmail.com</div>
+ <div> <v-icon color="">mdi-home-map-marker</v-icon> Hyderabad,Telangana,India
+</div>
+        <div class="qu mt-6 text-center" s>Have a question ? Message me. </div>
+
+        <form class="contact-form" >
+    <v-text-field type="text" id="name"  name='fromName'  placeholder="Your Name" append-icon="mdi-person" v-model="un" outlined color></v-text-field>
+        <v-text-field type="text" id="email" name='fromMail' placeholder="Your Email ID" append-icon="mdi-person" v-model="user_email" outlined color></v-text-field>
+      <v-textarea rows="2" outlined color="" id="mess" name='message' placeholder="Type message..." error-count="" v-model="message"></v-textarea>
 
     <!-- <input type="submit" value="Send"> -->
   </form>
+  <div class=" d-flex justify-end mb-2">
+       <v-btn width="100" :disabled="un==''||user_email==''||message==''"  elevation="" @click="sendMess()" color="#129966">Send</v-btn>
+</div>
   <div></div>
     </v-flex>
 
@@ -26,6 +42,7 @@
 </template>
 
 <script>
+import db from '@/fb'
 
 export default {
   data(){
@@ -33,28 +50,24 @@ export default {
     un:'',
     user_email:'',
     message:'',
+    value:false,
+
   }
   },
 methods:{
-   sendEmail: (e) => {
-     console.log(e)
-     const signupForm = document.getElementsByClassName('contact-form');
-     console.log(signupForm)
-const nameInput  = document.getElementById('name').value;
-const emailInput = document.getElementById('email').value;
-const messInput = document.getElementById("mess").value;
-console.log(nameInput,emailInput,messInput)
-emailjs.sendForm('gmail', 'template_NSmgEQBS', e.target, 'user_jpASUWm71qo6hv8JBcBLA',{
-name: nameInput,
-myname: "Prashanth",
-message: messInput
-})
-        .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-            console.log('FAILED...', error);
-        });
-    }
+  sendMess(){
+                var d=new Date()
+
+    var docu={fromName:this.un,fromMail:this.user_email,message:this.message,
+    timestamp:d.getTime(),date:d}
+
+    db.collection('messages').add(docu).then((res)=>{
+  this.user_email=''
+    this.un=''
+    this.message=''
+    this.value=true
+    })
+  }
 }
 }
 </script>
@@ -66,5 +79,10 @@ message: messInput
 }
 .me{
   border-radius: 50%;
+}
+.qu{
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+font-size: 30px;
+  color: #125566;
 }
 </style>

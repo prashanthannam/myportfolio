@@ -23,7 +23,7 @@
         <div class=" d-flex justify-center">
 <ul class=" text-start">
 <li>Software Development</li>
-<li>Full Stack Development</li>
+<li>Web Development</li>
 <li>Deep Learning</li>
 </ul></div>
 </div>

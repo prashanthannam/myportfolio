@@ -1,7 +1,7 @@
 <template>
 <div >
-  <router-view v-if="$route.name=='Resume'" ></router-view>
-<div v-if="$route.name!='Resume'" style=" transition-duration: 3000ms;">
+  <router-view v-if="$route.name=='Resume' || $route.name=='Me' "></router-view>
+<div v-if="$route.name!='Resume' && $route.name!='Me'  " style=" transition-duration: 3000ms;">
 
 <div  id="main">
 <div  id="app" v-observe-visibility="appvisibChange">
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-
+import db from '@/fb'
 import Home from './views/Home';
 import { ParticlesBg } from "particles-bg-vue";
 import Profile from './views/profile';
@@ -61,6 +61,14 @@ computed:{
 }
 
 },
+mounted(){
+  db.collection('messages').doc('views').get().then((res)=>{
+    var n=(res.data().views)+1
+    console.log(n)
+    db.collection('messages').doc('views').set({views:n})
+
+  })
+}
 };
 </script>
 <style lang='scss' scoped>
