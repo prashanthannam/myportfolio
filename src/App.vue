@@ -73,12 +73,13 @@ mounted(){
 <style lang='scss' scoped>
 #app {
 
-  height: 100%;
+  height: 100vh;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+
   // padding-top: 2%;
 }
 .main{

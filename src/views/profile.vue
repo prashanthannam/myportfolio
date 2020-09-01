@@ -2,7 +2,7 @@
   <v-app>
 
 <div class="bg">
-   <v-app-bar outlined="" :absolute="!open" color="#010B14" :fixed='open'  dark>
+   <v-app-bar  :absolute="!open" color="#010B14" :fixed='open'  dark>
       <v-row name="btns" class="" v-if="$vuetify.breakpoint.name!='xs'" >
         <v-btn text  large="" v-for="item in items" :key='item.title' class="mx-1 " depressed small @click=" $vuetify.goTo(item.route,{duration:900, offset: 0,easing: 'easeInOutCubic',})">
                 <v-icon left small class="">{{item.icon}}</v-icon>
