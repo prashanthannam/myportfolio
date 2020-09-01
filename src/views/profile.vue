@@ -10,7 +10,7 @@
         </v-btn>
       </v-row>
       <!-- <v-spacer></v-spacer> -->
-          <v-menu offset-y>
+          <v-menu  v-if="$vuetify.breakpoint.name=='xs'" offset-y>
             <template v-slot:activator="{ on, attrs }">
               <v-btn icon
                 color=""

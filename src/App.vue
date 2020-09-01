@@ -64,7 +64,6 @@ computed:{
 mounted(){
   db.collection('messages').doc('views').get().then((res)=>{
     var n=(res.data().views)+1
-    console.log(n)
     db.collection('messages').doc('views').set({views:n})
 
   })

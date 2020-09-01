@@ -121,11 +121,9 @@ date(time){
 mounted(){
 db.collection('messages').doc('views').onSnapshot((res)=>{
   this.views=res.data().views
-  console.log(res)
 })
   db.collection('messages').orderBy('timestamp','desc').onSnapshot((res)=>{
     res.docs.forEach(element => {
-      console.log(element.data())
     });
     this.messages=res.docs
   })

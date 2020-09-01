@@ -6940,10 +6940,6 @@ methods:{
 
 }
 
-function myFunction() {
-  console.log(document.getElementById("divv"))
-}
-myFunction()
 </script>
 
 <style scoped>
