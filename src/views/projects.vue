@@ -3,14 +3,16 @@
     <v-dialog
           v-model="dialog"
 
-          max-width="700px"
+          max-width="750"
           transition="dialog-transition"
         >
-          <v-card>
-           <v-carousel height="340" color="#125588" class="pt-2 pb-2" hide-delimiter-background show-arrows="" hide-delimiters=""
+          <v-card dark width="750">
+            <v-row justify="end" class="mr-3 mb-n2"> <v-icon @click="dialog=!dialog" class="mt-2"  color="">mdi-close</v-icon>
+            </v-row>
+           <v-carousel :height="$vuetify.breakpoint.name=='xs'?220:360" color="#125588" class="pt-2 pb-2 dia" hide-delimiter-background show-arrows="" hide-delimiters=""
              >
                <v-carousel-item v-for="img in number.images" :key="img" >
-                 <v-img class="ma-1" style="" height="340" contain :src="img"></v-img>
+                 <v-img class="" style="" :height="$vuetify.breakpoint.name=='xs'?200:340" contain :src="img"></v-img>
 
                </v-carousel-item>
              </v-carousel>
@@ -27,11 +29,11 @@
               {{number.desc}}
             </v-card-text>
             <v-card-actions class="mt-n4 d-flex justify-space-around">
-                <v-btn v-if="number.link!=null" dark="" :href="number.link" color="#125588">
+                <v-btn v-if="number.link!=null" dark="" :href="number.link" target="_blank" color="#125588">
                    <v-icon left color="">mdi-open-in-new</v-icon>
 
                   View site</v-btn>
-                 <v-btn  dark="" :href="number.proLink" color="#125588">
+                 <v-btn  dark="" :href="number.proLink" target="_blank" color="#125588">
                    <v-icon left color="">mdi-github</v-icon>
 
                   View Project</v-btn>
@@ -49,8 +51,8 @@
     <v-row class="mt-10" justify="center">
   <v-card class="projdisp d-flex justify-center">
 
-  <v-carousel
-      height="400" class=""
+  <v-carousel :cycle="!dialog" continuous="" interval="3000"
+      :height="$vuetify.breakpoint.name=='xs'?320:400" class=""
       hide-delimiter-background=""
       :show-arrows="false"
     >
@@ -67,7 +69,7 @@
 <v-hover v-slot:default="{ hover }">
 
           <v-sheet light="" color="#010B14" height="100%" width="100%">
-              <v-img contain="" height="92%" class="" :src="project.img" alt="">
+              <v-img contain="" height="90%" class="" :src="project.img" alt="">
                 <v-expand-transition>
           <div
             v-if="hover"

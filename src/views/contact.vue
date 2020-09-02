@@ -4,7 +4,7 @@
       v-model="value"
     >
         Message sent Successfully !!!
-      <v-btn text color="primary" @click.native="value = false">Close</v-btn>
+      <v-btn text class="ml-3" color="primary" @click.native="value = false">Close</v-btn>
     </v-snackbar>
     <v-row class="pb-0 mt-4" justify="center">
         <p class="titl grey--text text--darken-2">Contact</p>

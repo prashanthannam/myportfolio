@@ -6885,7 +6885,7 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
   <span style="color:white">
   Hello, I'm
   </span>
-  <span style="color:#E82139;font-size:45px" class=" name my-0 h4">PRASHANTH </span>
+  <span style="color:#2A9680;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
 <div style="color:white">
   I am a Software Engineer
   </div>
@@ -6902,6 +6902,9 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
 </template>
 
 <script>
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 export default {
 data(){
   return{
@@ -6945,9 +6948,12 @@ methods:{
 <style scoped>
 #divv{
   padding-top: 2%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  z-index: 0
+    height: calc(var(--vh, 1vh) * 100);
+
+  z-index: 0;
+
 }
 .close{
     transition-duration: 0.2s;

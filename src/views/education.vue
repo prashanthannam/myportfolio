@@ -30,7 +30,7 @@ data(){
   return{
     edus:[
       {name:'Gokaraju Rangaraju Institute of Engineering and Technology',det:'Bachelor of Technology in Computer Science',
-      loc:'Hyderabad, Telangana, India',date:'August 2016 - present',gpa:'9.08/10.0'}
+      loc:'Hyderabad, Telangana, India',date:'August 2016 - present',gpa:'9.05/10.0'}
     ]
   }
 }

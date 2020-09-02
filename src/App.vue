@@ -8,7 +8,6 @@
     <circles @open=" $vuetify.goTo('#profile',{duration:900, offset: 0,easing: 'easeInOutCubic',})" />
 
       <particles-bg type="cobweb" :canvas='{backgroundColor:"#010B14"}' color="#ffffff" :bg="true"/>
-
 </div>
 
 </div>
@@ -35,7 +34,7 @@ export default {
   data() {
     return {
       fixed:false,
-      open:false
+      open:false,
     }
   },
   methods:{
@@ -73,17 +72,18 @@ mounted(){
 <style lang='scss' scoped>
 #app {
 
-  height: 100vh;
+  // height: 100vh;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+      // background-color: #010B14;
 
   // padding-top: 2%;
 }
 .main{
-  background-color: #2c3e50;
+  background-color: #010B14;
 }
 .Profile{
   transition-duration: 1000ms;

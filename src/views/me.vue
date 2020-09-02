@@ -113,7 +113,7 @@ date(time){
                                  messtime=messtime+time.getMinutes()
                                  else
                                  messtime=messtime+'0'+time.getMinutes()
-                                 messtime=String(mess.time)+' AM'
+                                 messtime=String(messtime)+' AM'
                              }
                              return messtime+','+" "+ time.getDate()+'/'+time.getMonth()+'/'+time.getFullYear()
 }

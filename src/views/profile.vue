@@ -43,7 +43,7 @@
   <Education class=""/>
   <Experience class=""/>
   </div>
-  <Projects class="item"/>
+  <Projects class=""/>
   <Skills class="item"/>
   <Contact class="item"/>
 </v-main>
@@ -54,13 +54,13 @@
   <div class="">
  <v-tooltip top>
       <template v-slot:activator="{ on, attrs }">
-<a class="mr-10" v-on="on" v-bind="attrs" href="https://www.linkedin.com/in/prashanth-annam-86108b172/"><v-icon class="belowIc" large color="">mdi-linkedin</v-icon></a>
+<a class="mr-10" v-on="on" v-bind="attrs" href="https://www.linkedin.com/in/prashanth-annam-86108b172/" target="_blank"><v-icon class="belowIc" large color="">mdi-linkedin</v-icon></a>
       </template>
       <span>LinkedIn</span>
  </v-tooltip>
  <v-tooltip top>
       <template v-slot:activator="{ on, attrs }">
-<a class="mr-10" v-on="on" v-bind="attrs" href="https://github.com/prashanthannam"> <v-icon class="belowIc" large color="">mdi-github</v-icon>
+<a class="mr-10" v-on="on" v-bind="attrs" href="https://github.com/prashanthannam" target="_blank"> <v-icon class="belowIc" large color="">mdi-github</v-icon>
 </a></template>
 <span>GitHub</span>
  </v-tooltip>
@@ -81,17 +81,11 @@
 </div>
 </v-card-title>
 <v-card-text class="black pt-2 pb-2" >
-  <v-layout row wrap justify-space-between="">
-    <v-flex v-if="$vuetify.breakpoint.name!='xs'" xs1 sm4 md4 lg4 xl4 >
+  <v-layout row wrap justify-center>
 
-    </v-flex>
     <v-flex xs4 sm4 md4 lg4 xl4 class=" text-center">
     <p class="mt-1 mb-1">Prashanth <v-icon small="">mdi-copyright</v-icon> 2020
 </p>
-    </v-flex>
-    <v-flex xs8 sm4 md4 lg4 xl4 class=" text-end">
-
-
     </v-flex>
   </v-layout>
 </v-card-text>
