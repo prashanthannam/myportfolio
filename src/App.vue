@@ -7,7 +7,7 @@
 <div  id="app" v-observe-visibility="appvisibChange">
     <circles @open=" $vuetify.goTo('#profile',{duration:900, offset: 0,easing: 'easeInOutCubic',})" />
 
-      <particles-bg type="cobweb" :canvas='{backgroundColor:"#010B14"}' color="#ffffff" :bg="true"/>
+      <particles-bg type="cobweb" :num="nums" :canvas='{backgroundColor:"#1b1f2e"}' color="#ffffff" :bg="true"/>
 </div>
 
 </div>
@@ -35,6 +35,7 @@ export default {
     return {
       fixed:false,
       open:false,
+      nums:100
     }
   },
   methods:{

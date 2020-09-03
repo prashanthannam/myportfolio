@@ -1,6 +1,6 @@
 <template>
-  <div  id="experience" class="">
-    <v-row class="pb-0 mt-4" justify="center">
+  <div  id="experience" class=" pb-10">
+    <v-row class="pb-0 pt-4" justify="center">
         <p class="titl grey--text text--darken-2">EXPERIENCE</p>
     </v-row>
     <v-row class="mt-n3" justify="center">
@@ -59,4 +59,5 @@ div{
 .v-layout{
   margin-left: 10px;
 }
+
 </style>

@@ -51,7 +51,7 @@
     <v-row class="mt-10" justify="center">
   <v-card class="projdisp d-flex justify-center">
 
-  <v-carousel :cycle="!dialog" continuous="" interval="3000"
+  <v-carousel :cycle="!dialog && open==false" v-observe-visibility='appvisib' continuous="" interval="3000"
       :height="$vuetify.breakpoint.name=='xs'?320:400" class=""
       hide-delimiter-background=""
       :show-arrows="false"
@@ -108,6 +108,7 @@ data(){
   return{
     dialog:false,
     number:{},
+    open:false,
     projects:[
       {title:'NeoBook',date:'July 2020',desc:'NeoBook is a social media WebApp built using Vue.js and Firebasefor database. Users can post content, share posts, chat, comment, like etc.',img:'/neobook.png',
       images:['neobook.png','neobook1.png','neobook2.png','neobook3.png','neobook4.png','neobook5.png'],link:'https://neobook.herokuapp.com/',proLink:'https://github.com/prashanthannam/NeoBook'},
@@ -120,6 +121,16 @@ data(){
 
     ],
   }
+},
+methods:{
+   appvisib(isVisible, entry){
+    if(isVisible==false){
+      this.open=true
+    }
+    if(isVisible==true){
+      this.open=false
+    }
+    }
 }
 }
 </script>
@@ -146,5 +157,8 @@ data(){
   .projdisp{
     width: 56%;
   }
+}
+#projects{
+  background-color: rgb(247, 247, 247);
 }
 </style>

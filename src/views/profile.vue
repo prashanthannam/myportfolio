@@ -2,7 +2,7 @@
   <v-app>
 
 <div class="bg">
-   <v-app-bar  :absolute="!open" color="#010B14" :fixed='open'  dark>
+   <v-app-bar  :absolute="!open" color="#111122" :fixed='open'  dark>
       <v-row name="btns" class="" v-if="$vuetify.breakpoint.name!='xs'" >
         <v-btn text  large="" v-for="item in items" :key='item.title' class="mx-1 " depressed small @click=" $vuetify.goTo(item.route,{duration:900, offset: 0,easing: 'easeInOutCubic',})">
                 <v-icon left small class="">{{item.icon}}</v-icon>
@@ -48,9 +48,18 @@
   <Contact class="item"/>
 </v-main>
 </div>
-<v-footer dark="" class="pa-0">
-  <v-card style="width:100%" class="ma-0" >
+<v-footer dark=""  class="pa-0">
+  <v-card style="width:100%" color="#111122" class="ma-0" >
+  <v-row justify="center">
+        <v-btn  dark="" small="" height="50"  elevation="" class="pink darken-2 mt-n5" color="">
+                 <v-icon large="" @click="$vuetify.goTo('#main',{duration:900, offset: 0,easing: 'easeInOutCubic',})" color="">mdi-chevron-double-up</v-icon>
+
+        </v-btn>
+
+  </v-row>
 <v-card-title class="d-flex justify-center">
+
+
   <div class="">
  <v-tooltip top>
       <template v-slot:activator="{ on, attrs }">
@@ -80,7 +89,7 @@
   <!-- </v-btn> -->
 </div>
 </v-card-title>
-<v-card-text class="black pt-2 pb-2" >
+<v-card-text class=" pt-2 pb-2" >
   <v-layout row wrap justify-center>
 
     <v-flex xs4 sm4 md4 lg4 xl4 class=" text-center">

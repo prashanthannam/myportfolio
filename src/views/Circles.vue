@@ -1,7 +1,7 @@
 <template>
 <div >
-<div id="divv"  class="mouseMover" @mousemove="coordinates" @mousedown="clicked">
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="300px" viewBox="0 0 587 964" enable-background="new 0 0 587 964" xml:space="preserve">  <image id="image0" width="587" height="964" x="0" y="0"
+<div id="divv" class="mouseMover" @mousemove="coordinates" @mousedown="clicked">
+  <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="300px" viewBox="0 0 587 964" enable-background="new 0 0 587 964" xml:space="preserve">  <image id="image0" width="587" height="964" x="0" y="0"
     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAksAAAPECAYAAAC+LH+7AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAACA
 AElEQVR42uz9e9h1W1YXBv7GWmvv9/0up86pKuoGlgYFASkJQdAQBCIBaQQN3uIliYIRL0kUW7Hz
@@ -6881,11 +6881,11 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
           <circle class="close" :cx="475" :cy="325" :r="r2" stroke="black" stroke-width="2" fill="black" />
 
 </svg>
-<div class=" name white--text my-0">
+<div class=" name white--text ">
   <span style="color:white">
   Hello, I'm
   </span>
-  <span style="color:#2A9680;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
+  <span style="color:#ca2240;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
 <div style="color:white">
   I am a Software Engineer
   </div>
@@ -6947,23 +6947,39 @@ methods:{
 
 <style scoped>
 #divv{
-  padding-top: 2%;
+  padding-top: 3vw;
   width: 100%;
   height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-
+  align-content: center;
   z-index: 0;
 
 }
 .close{
     transition-duration: 0.2s;
 }
+
+@media only screen and (min-width: 450px){
 .name{
-  margin-top: -5px;
+  margin-top: -25px;
   margin-bottom: 10px;
   color: rgb(226, 192, 128);
-  font-size: 35px;
+  font-size: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+}
+@media only screen and (max-width: 450px){
+.name{
+  margin-top: -25px;
+  margin-bottom: 10px;
+  color: rgb(226, 192, 128);
+  font-size: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 }
 .v-btn{
   font-size: 20px;

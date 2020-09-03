@@ -32,14 +32,16 @@ data(){
     skills:[
       {name:'Vue.js',percent:96},
       {name:'Python',percent:94},
-      {name:'JavaScript',percent:86},
+      {name:'JavaScript',percent:93},
       {name:'HTML',percent:92},
       {name:'CSS',percent:83},
-      {name:'Deep Learning',percent:80},
-      {name:'Firestore',percent:75},
-      {name:'Data Structures',percent:90},
+      {name:'Computer Vision',percent:80},
+      {name:'Firestore',percent:90},
+      {name:'DS & Algo',percent:90},
       {name:'Flutter',percent:85},
-      {name:'Django',percent:88}
+      {name:'Django',percent:88},
+      {name:'Node.js',percent:86}
+
       ]
   }
 },
@@ -64,5 +66,8 @@ computed:{
 .sk{
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 26px;
+}
+#skills{
+  background-color: rgb(247, 247, 247);
 }
 </style>
