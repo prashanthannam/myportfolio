@@ -97,7 +97,7 @@ font-size: 30px;
   color: #2f9ab4;
 }
 #contact{
-  background-color: #1b1f2e;
+  background-color: #010B14;
   width: 100%;
   color: white;
 }

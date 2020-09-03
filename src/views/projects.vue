@@ -68,7 +68,7 @@
           >
 <v-hover v-slot:default="{ hover }">
 
-          <v-sheet light="" color="#010B14" height="100%" width="100%">
+          <v-sheet light="" dark="" color="#010B14" height="100%" width="100%">
               <v-img contain="" height="90%" class="" :src="project.img" alt="">
                 <v-expand-transition>
           <div

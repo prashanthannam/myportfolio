@@ -2,7 +2,7 @@
   <v-app>
 
 <div class="bg">
-   <v-app-bar  :absolute="!open" color="#111122" :fixed='open'  dark>
+   <v-app-bar  :absolute="!open" color="#0c1a27" :fixed='open'  dark>
       <v-row name="btns" class="" v-if="$vuetify.breakpoint.name!='xs'" >
         <v-btn text  large="" v-for="item in items" :key='item.title' class="mx-1 " depressed small @click=" $vuetify.goTo(item.route,{duration:900, offset: 0,easing: 'easeInOutCubic',})">
                 <v-icon left small class="">{{item.icon}}</v-icon>
@@ -49,7 +49,7 @@
 </v-main>
 </div>
 <v-footer dark=""  class="pa-0">
-  <v-card style="width:100%" color="#111122" class="ma-0" >
+  <v-card style="width:100%" color="#0c1a27" class="ma-0" >
   <v-row justify="center">
         <v-btn  dark="" small="" height="50"  elevation="" class="pink darken-2 mt-n5" color="">
                  <v-icon large="" @click="$vuetify.goTo('#main',{duration:900, offset: 0,easing: 'easeInOutCubic',})" color="">mdi-chevron-double-up</v-icon>

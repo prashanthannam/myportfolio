@@ -6878,7 +6878,7 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
          <circle :cx="470+x" :cy="295+y" r="10" stroke="black" stroke-width="2" fill="black" />
                    <circle class="close" :cx="465" :cy="295" :r="r2" stroke="black" stroke-width="2" fill="black" />
 
-          <circle class="close" :cx="475" :cy="325" :r="r2" stroke="black" stroke-width="2" fill="black" />
+          <circle class="close" :cx="465" :cy="320" :r="r2" stroke="black" stroke-width="2" fill="black" />
 
 </svg>
 <div class=" name white--text ">
@@ -6887,7 +6887,7 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
   </span>
   <span style="color:#ca2240;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
 <div style="color:white">
-  I am a Software Engineer
+  I'm a Software Engineer
   </div>
   </div>
 <v-btn id="btnn" @mouseover="sty='transform: rotate(90deg)'" @mouseleave="sty=''" large=""  text   @click="$emit('open')"
@@ -6934,8 +6934,8 @@ methods:{
   },
 
   clicked(){
-    this.r=56
-    this.r2=42
+    this.r=60
+    this.r2=46
     setTimeout(() => {  this.r=0;this.r2=0 }, 450);
 
   }
@@ -6956,7 +6956,7 @@ methods:{
 
 }
 .close{
-    transition-duration: 0.2s;
+    transition-duration: 0.15s;
 }
 
 @media only screen and (min-width: 450px){
