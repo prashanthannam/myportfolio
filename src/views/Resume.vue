@@ -1,0 +1,22 @@
+<template>
+<v-main>
+  <center>
+<v-card outlined="" height="650" width="600" class="pt-6">
+  <embed type="application/pdf" src='/My_Resume.pdf' >
+
+  </v-card></center>
+</v-main>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+embed{
+  height: 100%;
+  width: 100%;
+}
+</style>
