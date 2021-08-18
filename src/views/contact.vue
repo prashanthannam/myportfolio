@@ -27,13 +27,13 @@
     </v-row>
   <v-layout class="mt-8" row wrap justify-center="">
     <v-flex xs10 sm8 md6 lg5 xl5>
-      <div> <v-icon dark="" color="">mdi-phone</v-icon>
- +91 8466851979</div>
-<div> <v-icon dark="" color="">mdi-gmail</v-icon>
+      <div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-phone</v-icon>
+ +1 404-944-1903  |  +91 8466851979</div>
+<div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-gmail</v-icon>
  prashanth31399@gmail.com</div>
- <div> <v-icon dark="" color="">mdi-home-map-marker</v-icon> Hyderabad, Telangana, India
+ <div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-home-map-marker</v-icon> Atlanta, Georgia, USA
 </div>
-        <div class="qu mt-6 text-center" s>Have a question ? Message me. </div>
+        <div class="qu mt-6 text-center mb-2" s>Have a question ? Message me. </div>
 
         <form class="contact-form" >
     <v-text-field type="text" dark="" id="name"  name='fromName'  placeholder="Your Name" append-icon="mdi-person" v-model="un" outlined></v-text-field>

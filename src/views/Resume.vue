@@ -1,7 +1,7 @@
 <template>
 <v-main>
   <center>
-<v-card outlined="" height="650" width="600" class="pt-6">
+<v-card outlined="" height="100vh"  class="">
   <embed type="application/pdf" src='/My_Resume.pdf' >
 
   </v-card></center>
@@ -11,7 +11,7 @@
 <script>
 export default {
 
-}
+};
 </script>
 
 <style scoped>

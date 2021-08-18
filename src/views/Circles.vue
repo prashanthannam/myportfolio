@@ -6886,9 +6886,9 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
   Hello, I'm
   </span>
   <span style="color:#ca2240;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
-<div style="color:white">
+<!-- <div style="color:white">
   I'm a Software Engineer
-  </div>
+  </div> -->
   </div>
 <v-btn id="btnn" @mouseover="sty='transform: rotate(90deg)'" @mouseleave="sty=''" large=""  text   @click="$emit('open')"
   class="btn mt-4">

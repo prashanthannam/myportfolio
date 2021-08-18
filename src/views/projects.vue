@@ -19,12 +19,25 @@
           <v-divider
             class=""
           ></v-divider>
+          <v-layout justify-space-between class="mr-6">
+              <span>
             <v-card-title>
               {{number.title}}
             </v-card-title>
-            <v-card-subtitle class="mt-n2">
+            </span>
+            <span>
+ <v-card-subtitle class="mt-1">
               {{number.date}}
             </v-card-subtitle>
+            </span>
+            </v-layout>
+             <v-card-subtitle class="mt-n4">
+              {{number.sub}}
+            </v-card-subtitle>
+            <v-card-subtitle class="mt-n4">
+              {{number.tech}}
+            </v-card-subtitle>
+           
             <v-card-text>
               {{number.desc}}
             </v-card-text>
@@ -40,7 +53,7 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-    <v-row class="pb-0 mt-4" justify="center">
+    <v-row class="pb-0 mt-16" justify="center">
         <p class="titl grey--text text--darken-2">PROJECTS</p>
     </v-row>
     <v-row class="mt-n3" justify="center">
@@ -110,13 +123,31 @@ data(){
     number:{},
     open:false,
     projects:[
-      {title:'NeoBook',date:'July 2020',desc:'NeoBook is a social media WebApp built using Vue.js and Firebasefor database. Users can post content, share posts, chat, comment, like etc.',img:'/neobook.png',
+      {title:'NeoBook ',
+      date:'Fall 2020',
+      sub:'Self Project',
+      tech:'Technologies Used : Vue.js, Vuetify, Firebase, Heroku',
+      desc:'Designed, developed, and deployed a scalable social media web application to learn and demonstrate system design. Added features like email authentication, post and share content, chat with others, comment & like posts',
+      img:'/neobook.png',
       images:['neobook.png','neobook1.png','neobook2.png','neobook3.png','neobook4.png','neobook5.png'],link:'https://neobook.herokuapp.com/',proLink:'https://github.com/prashanthannam/NeoBook'},
-      {title:'NeoChat',date:'June 2020',desc:'NeoChat chat app build using flutter and firestore, where users can add profile pictures, search for other users and can make real-time chatting.',img:'/neochat.png',
+      {title:'NeoChat',
+      date:'Summer 2020',
+      sub:'Self Project',
+      tech:'Technologies Used : Flutter, Firebase, Xcode, Android Studio',
+      desc:'Developed an end-to-end mobile chat application, where users can make real-time chatting. Integrated with real-time updates, read receipts and push notifications',img:'/neochat.png',
       images:['neochat.png','neochat1.png','neochat2.png','neochat3.png','neochat4.png',],link:null,proLink:'https://github.com/prashanthannam/NeoChat'},
-      {title:'Detecting Helmet Violators in Traffic',date:'Dec 2019',desc:'The system aims at detecting riders without helmet along with their number plates from traffic footage to extract Registration number.',img:'/helmet.png',
+      {title:'Detecting Helmet Violators in Traffic',
+      date:'Fall 2019',
+      sub:'Academic Project',
+      tech:'Technologies Used : YOLO, OCR, TensorFlow, Django',
+      desc:'Developed a web application that detects riders without a helmet from traffic footage and extracts their license plate number. Generated a dataset of Indian traffic consisting of 1500 images, trained a CNN model using YOLO, and achieved 85% accuracy. Developed an Optical Character recognition module that takes the bike image and scans the number plate to convert it into text format',
+      img:'/helmet.png',
       images:['helmet.png','helmet1.png','helmet2.png',],link:'http://ec2-18-191-242-212.us-east-2.compute.amazonaws.com/detect/helmetview/',proLink:'https://github.com/prashanthannam/HelmetDetectionYOLOV3'},
-      {title:'Sign Language Translator',date:'Apr 2018',desc:'The project aims at recognizing sign Gesture images and display the respective alphabetic notation on a webpage using Convolutional Neural Network',img:'/slt.png',
+      {title:'Sign Language Translator',
+      date:'Fall 2018',
+      sub:'Academic Project',
+      tech:'Technologies Used : HTML, Bootstrap, Keras, TensorFlow.js ',
+      desc:'Built a web application to recognize and display American Sign Language Gestures through live camera input. Trained a model using Keras to recognize gestures and integrated it into a web application',img:'/slt.png',
       images:['slt.png','slt1.png'],link:null,proLink:'https://github.com/prashanthannam/Sign-Language-Translator'},
 
     ],

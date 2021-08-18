@@ -63,7 +63,7 @@
   <div class="">
  <v-tooltip top>
       <template v-slot:activator="{ on, attrs }">
-<a class="mr-10" v-on="on" v-bind="attrs" href="https://www.linkedin.com/in/prashanth-annam-86108b172/" target="_blank"><v-icon class="belowIc" large color="">mdi-linkedin</v-icon></a>
+<a class="mr-10" v-on="on" v-bind="attrs" href="https://www.linkedin.com/in/prashanthannam/" target="_blank"><v-icon class="belowIc" large color="">mdi-linkedin</v-icon></a>
       </template>
       <span>LinkedIn</span>
  </v-tooltip>
