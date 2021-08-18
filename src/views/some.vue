@@ -11,6 +11,7 @@
   <v-layout class="mt-14" row wrap>
     <v-flex xs12 sm12 md6 lg6 xl6>
 
+
     </v-flex>
   </v-layout>
   </div>
