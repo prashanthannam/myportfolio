@@ -34,7 +34,7 @@ data(){
   return{
     edus:[
       {name:'Tilace Technologies',det:'Software Engineer',
-      loc:'Sivakasi, Tamil Nadu, India',date:'Oct 2020 - Jun 2021',
+      loc:'Chennai, Tamil Nadu, India',date:'Oct 2020 - Jun 2021',
       gpa:["Designed and developed 60+ scalable and reusable Rest API services for CRM, CAM, CMS, ECommerce features", "Developed E-commerce, CAM, CMS web applications and added multiple critical features like authentication and billing","Designed UI/UX and built mobile applications for various services, which increased the user base up to 40%","Designed and developed a complex admin portal for dynamically configuring and managing applications","Worked with GCP and firebase to integrate crucial functionalities like Google Analytics, GoogleMaps, and Push Notifications"]}, 
 
        {name:'OpenText',det:'Software Engineering Intern',
