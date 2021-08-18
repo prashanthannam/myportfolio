@@ -22,7 +22,7 @@
           wrap
           justify-center
         >
-          <v-flex class="text-center" xs6 sm4 md3 lg6 xl4>
+          <v-flex class="text-center" xs sm8 md8 lg6 xl4>
             <v-chip outlined large  v-for="(skill, i) in skills"
           :key="i" class="sk text-center mx-4 my-2"><div class="sk">{{ skill.name }} </div></v-chip>
           </v-flex>
