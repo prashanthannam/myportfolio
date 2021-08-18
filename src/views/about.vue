@@ -23,7 +23,7 @@
 <li> Expertise in designing, building, testing and maintaining end-to-end web and mobile applications.</li>
 <li>Proficient in developing REST APIs.</li>
 <li>Have both Theoretical and hands-on knowledge of Computer Vision</li>  -->
-<p class="mt-12">Passionate in Computer Science and pursuing Masters in Computer Science with 1+ years of full-time and internship experience . seeking Internship opportunities starting from May 2022. </p>
+<p class="mt-16">Passionate in Computer Science and pursuing Masters in Computer Science with 1+ years of full-time and internship experience. seeking Internship opportunities starting from May 2022. </p>
 <!-- <p>Passionate, creative, and Dedicated Master's student in Computer Science with 1+ years of full-time and internship experience in Full-Stack development. seeking Co-Op opportunities starting from May 2022.</p> -->
         <!-- <div>born and raised in India.</div> -->
         <!-- <div class="mt-2 text-center">Areas of interest : </div> -->

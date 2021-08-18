@@ -1,7 +1,7 @@
 <template>
 <div >
 <div id="divv" class="mouseMover" @mousemove="coordinates" @mousedown="clicked">
-  <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="300px" viewBox="0 0 587 964" enable-background="new 0 0 587 964" xml:space="preserve">  <image id="image0" width="587" height="964" x="0" y="0"
+  <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="400px" viewBox="0 0 587 964" enable-background="new 0 0 587 964" xml:space="preserve">  <image id="image0" width="587" height="964" x="0" y="0"
     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAksAAAPECAYAAAC+LH+7AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAACA
 AElEQVR42uz9e9h1W1YXBv7GWmvv9/0up86pKuoGlgYFASkJQdAQBCIBaQQN3uIliYIRL0kUW7Hz
@@ -6882,16 +6882,16 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
 
 </svg>
 <div class=" name white--text ">
-  <span style="color:white">
+  <span class="mt-8" style="color:white;margin-top:20px">
   Hello, I'm
   </span>
-  <span style="color:#ca2240;font-size:40px" class=" name my-0 h4">PRASHANTH </span>
+  <span style="color:#ca2240;font-size:45px" class=" name my-0 h4">PRASHANTH </span>
 <!-- <div style="color:white">
   I'm a Software Engineer
   </div> -->
   </div>
-<v-btn id="btnn" @mouseover="sty='transform: rotate(90deg)'" @mouseleave="sty=''" large=""  text   @click="$emit('open')"
-  class="btn mt-4">
+<v-btn x-large id="btnn" @mouseover="sty='transform: rotate(90deg)'" @mouseleave="sty=''"  text   @click="$emit('open')"
+  class="btn large mt-4">
   <p>About me</p>
   <v-icon :style="sty"  right="">mdi-arrow-right</v-icon>
 
@@ -6964,7 +6964,7 @@ methods:{
   margin-top: -25px;
   margin-bottom: 10px;
   color: rgb(226, 192, 128);
-  font-size: 40px;
+  font-size: 45px;
   margin-right: 10px;
   margin-left: 10px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

@@ -6890,7 +6890,7 @@ aWZ5ADIwMjAtMDgtMjZUMTM6MTc6NDArMDM6MDBmpdL9AAAAAElFTkSuQmCC" />
           <circle class="close" :cx="475" :cy="325" :r="r" stroke="black" stroke-width="2" fill="black" />
 
 </svg>
-<div class=" name white--text my-0">Hello, I'm</div>
+<div class=" name white--text mt-6 my-0">Hello, I'm</div>
 <div class=" name my-0 h4">PRASHANTH ANNAM</div>
 
 <v-btn dark="" color="#559977"    @click="$vuetify.goTo('#profile')"
