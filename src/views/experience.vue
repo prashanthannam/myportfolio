@@ -10,7 +10,7 @@
     </v-row>
   <v-layout class="mt-4 ml-2" align-baseline="" v-for="(edu,i) in edus" :key="i" row wrap :justify-start="$vuetify.breakpoint.name=='xs' || $vuetify.breakpoint.name=='sm'"
    :justify-space-around="$vuetify.breakpoint.name=='md' || $vuetify.breakpoint.name=='lg' || $vuetify.breakpoint.name=='xl'">
-    <v-flex xs11 sm11 md6 lg1 xl4></v-flex>
+    <v-flex xs11 sm11 md10 lg1 xl4></v-flex>
     <v-flex xs11 sm11 md6 lg8 xl4>
       <div class="comname  ">{{edu.name}}</div>
       <div class="mt-1" style="font-size:22px;color:#555555">{{edu.det}}</div>

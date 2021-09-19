@@ -9,7 +9,7 @@
 elevation="2"
   >
   <v-card-title primary-title class="grey--text justify-center">
-        <span class="h6" > Login</span>
+        <span class="h8" > Login</span>
 
   </v-card-title>
     <v-card-text justify-center>
@@ -23,12 +23,12 @@ elevation="2"
          The email address or phone number that you've entered doesn't match any account.
          </v-alert>
 
-        <v-card-actions class="justify-end mr-3">
-            <v-btn  elevation="" class="justify-end" color="success" @click="Signin" >
+        <!-- <v-card-actions class="justify-end mr-3"> -->
+            <v-btn  elevation="" type="submit" class="justify-end" color="success" @keyup.space="Signin" @click="Signin" >
               <v-icon left color="">mdi-login-variant</v-icon>
                Login</v-btn>
 
-        </v-card-actions>
+        <!-- </v-card-actions> -->
     </v-card-text>
     <v-card-actions>
 
@@ -38,7 +38,7 @@ elevation="2"
     </v-layout >
 <v-layout class='mt-10' justify-center="" align-start="">
   <v-flex xs10 sm8 md7 lg6>
-    <div v-if="login && messages.length!=0">
+    <div v-if="login ">
       <h3 class="ml-7 h4">
         {{views}} members viewed this page
       </h3>
@@ -87,6 +87,7 @@ data(){
 },
 methods:{
 Signin(){
+    console.log("jhgf")
   if(this.email=='prashanth31399@gmail.com' && this.password=='prashanth205'){
     this.login=true
   }
