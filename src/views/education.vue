@@ -30,7 +30,7 @@ data(){
   return{
     edus:[
       {name:'Georgia State University',det:'Masters of Science in Computer Science',
-      loc:'Atlanta, Georgia, USA',date:'Aug 2021 - present',gpa:''},
+      loc:'Atlanta, Georgia, USA',date:'Aug 2021 - present',gpa:'4.05/4'},
       {name:'Gokaraju Rangaraju Institute of Engineering and Technology',det:'Bachelor of Technology in Computer Science and Engineering',
       loc:'Hyderabad, Telangana, India',date:'Aug 2016 - Sept 2020',gpa:'9.09/10.0'},
     ]
