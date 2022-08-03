@@ -38,7 +38,7 @@ data(){
       gpa:["Designed and developed an extensible tool in Python for generating visualization reports on JVM Garbage Collector logs","Built a process that extracts the GC log files from remote servers and uploads the generated reports to an S3 bucket","Reduced 2 hours of the team’s manual effort to 2 minutes and integrated the tool with the Concourse CI/CD pipeline","Tech Stack: Python, HTML,CSS, AWS S3, Concourse"]}, 
 
       {name:'Tilace Technologies',det:'Software Engineer',
-      loc:'Chennai, Tamil Nadu, India',date:'Oct 2020 - Jun 2021',
+      loc:'Chennai, Tamil Nadu, India',date:'Sep 2020 - July 2021',
       gpa:["Worked on designing and developing several modules in a Customer Relationship Management application","Responsible for writing APIs that read from complex database schemas to integrate different modules in the application","Worked with Google Cloud Platform to integrate functionalities like Google Analytics, GoogleMaps, and Geocoding","Participate in weekly meetings with clients to analyze the requirements and delivery estimations","Tech Stack: Node.js, React.js, Golang, SQL, Flutter,"]}, 
 
        {name:'OpenText',det:'Software Engineering Intern',
