@@ -30,7 +30,7 @@
       <div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-phone</v-icon>
  +1 404-944-1903  |  +91 8466851979</div>
 <div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-gmail</v-icon>
- prashanth31399@gmail.com</div>
+ prashanth.annam3@gmail.com</div>
  <div class="mb-2"> <v-icon class="mr-2" dark="" color="">mdi-home-map-marker</v-icon> Atlanta, Georgia, USA
 </div>
         <div class="qu mt-6 text-center mb-2" s>Have a question ? Message me. </div>
