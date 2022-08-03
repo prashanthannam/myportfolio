@@ -33,13 +33,17 @@ export default {
 data(){
   return{
     edus:[
+      {name:'ADP',det:'Application Developer Intern',
+      loc:'Alpharetta, Georgia, USA',date:'May 2022 - Aug 2022',
+      gpa:["Designed and developed an extensible tool in Python for generating visualization reports on JVM Garbage Collector logs","Built a process that extracts the GC log files from remote servers and uploads the generated reports to an S3 bucket","Reduced 2 hours of the team’s manual effort to 2 minutes and integrated the tool with the Concourse CI/CD pipeline","Tech Stack: Python, HTML,CSS, AWS S3, Concourse"]}, 
+
       {name:'Tilace Technologies',det:'Software Engineer',
       loc:'Chennai, Tamil Nadu, India',date:'Oct 2020 - Jun 2021',
-      gpa:["Designed and developed 60+ scalable and reusable Rest API services for CRM, CAM, CMS, ECommerce features", "Developed E-commerce, CAM, CMS web applications and added multiple critical features like authentication and billing","Designed UI/UX and built mobile applications for various services, which increased the user base up to 40%","Designed and developed a complex admin portal for dynamically configuring and managing applications","Worked with GCP and firebase to integrate crucial functionalities like Google Analytics, GoogleMaps, and Push Notifications"]}, 
+      gpa:["Worked on designing and developing several modules in a Customer Relationship Management application","Responsible for writing APIs that read from complex database schemas to integrate different modules in the application","Worked with Google Cloud Platform to integrate functionalities like Google Analytics, GoogleMaps, and Geocoding","Participate in weekly meetings with clients to analyze the requirements and delivery estimations","Tech Stack: Node.js, React.js, Golang, SQL, Flutter,"]}, 
 
        {name:'OpenText',det:'Software Engineering Intern',
       loc:'Banglore, Karnataka, India',date:'Aug 2019 - Dec 2019',
-      gpa:["Worked on automating several test cases and created UI-tests for a content management system","Made some significant enhancements for the automation framework to improve testability by over 30%","Improved code quality by integrating single responsibility and separation of concern to the existing codebase"]}  
+      gpa:["Worked on automating various test cases and created UI tests for a content management system","Made significant enhancements to the automation framework to improve testability by over 30%","Participate and contribute to daily scrum meetings with developers and managers to discuss ideas, update and resolve issues"]}  
     ]
   }
 }
