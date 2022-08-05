@@ -7,6 +7,7 @@ import vuetify from './plugins/vuetify';
 import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(VueObserveVisibility)
 
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.config.productionTip = false;
 new Vue({

@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import Profile from '../views/profile.vue';
-import Resume from '../views/Resume.vue';
-import Me from '../views/me.vue'
+import Home from '../views/home-page.vue';
+import Profile from '../views/profile-page.vue';
+import Resume from '../views/resume-page.vue';
+import Me from '../views/me-page.vue'
 Vue.use(VueRouter);
 
 const routes = [{
