@@ -3,7 +3,7 @@
     <v-dialog v-model="dialog" max-width="750" transition="dialog-transition">
       <v-card dark width="750">
         <v-row justify="end" class="mr-3 mb-n2">
-          <v-icon @click="dialog = !dialog" class="mt-2" color=""
+          <v-icon @click="dialog = !dialog" class="mt-4 mb-2" color=""
             >mdi-close</v-icon
           >
         </v-row>
@@ -48,7 +48,7 @@
         <v-card-text>
           {{ number.desc }}
         </v-card-text>
-        <v-card-actions class="mt-n4 d-flex justify-space-around">
+        <v-card-actions class="mt-n4 pb-4 d-flex justify-space-around">
           <v-btn
             v-if="number.link != null"
             dark=""
@@ -115,15 +115,7 @@
                       <v-expand-transition>
                         <div
                           v-if="hover"
-                          class="
-                            transition-ease-in-out
-                            white
-                            darken-2
-                            v-card--reveal
-                            display-3
-                            py-10
-                            grey--text
-                          "
+                          class="transition-ease-in-out white darken-2 v-card--reveal display-3 py-10 grey--text"
                           style="height: 100%; opacity: 0.8"
                         >
                           <div class="py-16">
@@ -167,11 +159,11 @@ export default {
       open: false,
       projects: [
         {
-          title: "NeoBook ",
-          date: "Fall 2020",
-          sub: "Self Project",
+          title: "Social Media Application",
+          date: "Fall 2021",
+          sub: "Academc Project",
           tech: "Technologies Used : Vue.js, Vuetify, Firebase, Heroku",
-          desc: "Designed, developed, and deployed a scalable social media web application to learn and demonstrate system design. Added features like email authentication, post and share content, chat with others, comment & like posts",
+          desc: "Designed, developed, and deployed a scalable social media web application, showcasing adept system design. Applied intricate features including email authentication, content posting, and sharing, real-time chatting, as well as liking and commenting.",
           img: "/neobook.png",
           images: [
             "neobook.png",
@@ -185,11 +177,11 @@ export default {
           proLink: "https://github.com/prashanthannam/NeoBook",
         },
         {
-          title: "NeoChat",
+          title: "Chatting Mobile App",
           date: "Summer 2020",
-          sub: "Self Project",
+          sub: "Own Project",
           tech: "Technologies Used : Flutter, Firebase, Xcode, Android Studio",
-          desc: "Developed an end-to-end mobile chat application, where users can make real-time chatting. Integrated with real-time updates, read receipts and push notifications",
+          desc: "Engineered a mobile chat application enabling real-time conversations with read receipts and push notifications. Utilized Firebase streams for seamless data retrieval and display, enhancing the user experience.",
           img: "/neochat.png",
           images: [
             "neochat.png",
@@ -206,7 +198,7 @@ export default {
           date: "Fall 2019",
           sub: "Academic Project",
           tech: "Technologies Used : YOLO, OCR, TensorFlow, Django",
-          desc: "Developed a web application that detects riders without a helmet from traffic footage and extracts their license plate number. Generated a dataset of Indian traffic consisting of 1500 images, trained a CNN model using YOLO, and achieved 85% accuracy. Developed an Optical Character recognition module that takes the bike image and scans the number plate to convert it into text format",
+          desc: "Designed a web application utilizing computer vision to detect helmetless riders in Indian traffic footage, achieving 85% accuracy. Integrated an Optical Character Recognition module to extract license plate numbers from bike images.",
           img: "/helmet.png",
           images: ["helmet.png", "helmet1.png", "helmet2.png"],
           link: "http://ec2-18-191-242-212.us-east-2.compute.amazonaws.com/detect/helmetview/",
