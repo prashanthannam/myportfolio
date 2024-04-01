@@ -46,7 +46,7 @@
           GPA : {{ edu.gpa }}
         </div>
       </v-flex>
-      <v-flex xs8 sm6 md4 lg2 xl1>
+      <v-flex xs8 sm6 md4 lg3 xl2>
         <div class="" style="font-size: 22px; color: #555555">
           {{ edu.date }}
         </div>
